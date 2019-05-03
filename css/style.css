@@ -69,10 +69,8 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
-    /*TODO: Correct overflow-x: hidden;*/
-    body {
+    .navigationBar {
         overflow-x: hidden;
-        /*overflow-y: hidden;*/
     }
 
     .nav-links {
