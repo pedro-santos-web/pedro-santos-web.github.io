@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/* Nav Bar */
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -42,12 +44,13 @@ nav {
     font-weight: bold;
     font-size: 14px;
     padding-bottom: 2px;
-    border-bottom: solid white 1px;
+    border-bottom: solid rgb(39, 39, 39) 1px;
 }
 
 .nav-links a:hover {
     color: rgb(150,150,150);
     border-bottom: solid rgb(150,150,150) 1px;
+    transition: all 1s ease;
 }
 
 .burger {
@@ -62,13 +65,15 @@ nav {
     transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 1000px) {
+/* Responsive Design */
+
+@media screen and (max-width: 1300px) {
     .nav-links {
         width: 50%;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     html, body {
         overflow-x: hidden;
     }
@@ -94,6 +99,15 @@ nav {
     .burger {
         display: block;
         cursor: pointer;
+    }
+
+    .nav-links a {
+        border-bottom: solid rgb(39, 39, 39) 1px;
+    }
+    
+    .nav-links a::selection {
+        border-bottom: solid rgb(150,150,150) 1px;
+        transition: all 1s ease;
     }
 }
 
