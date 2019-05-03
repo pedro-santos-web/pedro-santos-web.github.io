@@ -72,6 +72,7 @@ nav {
     /*TODO: Correct overflow-x: hidden;*/
     body {
         overflow-x: hidden;
+        overflow-y: hidden;
     }
 
     .nav-links {
