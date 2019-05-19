@@ -22,6 +22,7 @@ const navSlide = () => {
 
 const app = () => {
     navSlide();
+    textAnimation();
 }
 
 app();

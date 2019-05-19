@@ -191,6 +191,8 @@ nav {
     font-size: 50px;
     padding-right: 20px;
     padding-left: 20px;
+    animation-name: mainText;
+    animation-duration: 5s;
 }
 
 .secondBigTitle {
@@ -200,7 +202,18 @@ nav {
     text-align: center;
     color: #ffffff;
     top: 45%;
-    font-size: 30px;
+    font-size: 25px;
     padding-right: 20px;
     padding-left: 20px;
+    animation-name: mainText;
+    animation-duration: 10s;
+}
+
+@keyframes mainText {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
